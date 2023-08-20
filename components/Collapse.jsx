@@ -19,8 +19,6 @@ const Collapse = ({ children, className }) => {
   );
 };
 
-export default Collapse;
-
 Collapse.Body = ({ children, className }) => {
   const { toggle } = useCollapse();
 
@@ -44,3 +42,5 @@ Collapse.Toggle = ({ children, className }) => {
 
   return <div onClick={() => setToggle((prev) => !prev)}>{children}</div>;
 };
+
+export default Collapse;

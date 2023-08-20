@@ -13,8 +13,6 @@ const Input = ({ type = "text", placeholder = "", className = "" }) => {
   );
 };
 
-export default Input;
-
 Input.Label = ({ children, className = "" }) => {
   return (
     <label
@@ -37,3 +35,5 @@ Input.TextArea = ({ children, className = "", rows = "3" }) => {
     />
   );
 };
+
+export default Input;

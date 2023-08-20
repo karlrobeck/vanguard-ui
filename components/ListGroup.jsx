@@ -8,8 +8,6 @@ const ListGroup = ({ children, className }) => {
   );
 };
 
-export default ListGroup;
-
 ListGroup.Item = ({ children, className }) => {
   return (
     <li
@@ -19,3 +17,4 @@ ListGroup.Item = ({ children, className }) => {
     </li>
   );
 };
+export default ListGroup;

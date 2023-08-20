@@ -10,8 +10,6 @@ const Button = ({ children, type = "button", className = "" }) => {
   );
 };
 
-export default Button;
-
 Button.Outline = ({
   children,
   type = "button",
@@ -27,3 +25,5 @@ Button.Outline = ({
     </button>
   );
 };
+
+export default Button;

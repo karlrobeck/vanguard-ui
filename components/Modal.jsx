@@ -17,8 +17,6 @@ const Modal = ({ children }) => {
   );
 };
 
-export default Modal;
-
 Modal.Toggle = ({ children, className = "" }) => {
   const { setToggle } = useModal();
 
@@ -49,3 +47,5 @@ Modal.Body = ({ children, className = "" }) => {
     </Transition>
   );
 };
+
+export default Modal;

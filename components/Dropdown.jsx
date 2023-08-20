@@ -16,8 +16,6 @@ const Dropdown = ({ children }) => {
   );
 };
 
-export default Dropdown;
-
 Dropdown.Toggle = ({ children }) => {
   const { setToggle } = useDropdown();
 
@@ -28,3 +26,5 @@ Dropdown.Content = ({ children }) => {
 
   return <>{toggle && <div className="absolute py-4">{children}</div>}</>;
 };
+
+export default Dropdown;

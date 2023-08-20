@@ -10,8 +10,6 @@ const Navbar = ({ children, className }) => {
   );
 };
 
-export default Navbar;
-
 Navbar.Content = ({ children, className }) => {
   return (
     <nav
@@ -30,3 +28,5 @@ Navbar.Brand = ({ children, href }) => {
     </a>
   );
 };
+
+export default Navbar;

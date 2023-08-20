@@ -8,8 +8,6 @@ const Nav = ({ children }) => {
   );
 };
 
-export default Nav;
-
 Nav.Link = ({ children, href }) => {
   return (
     <a
@@ -20,3 +18,5 @@ Nav.Link = ({ children, href }) => {
     </a>
   );
 };
+
+export default Nav;

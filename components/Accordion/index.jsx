@@ -11,8 +11,6 @@ const Accordion = ({ children, className = "" }) => {
   return <div className={`${Type.base} ${className}`}>{children}</div>;
 };
 
-export default Accordion;
-
 Accordion.Item = ({ children, className = "", type = "default" }) => {
   const [toggle, setToggle] = useState();
 
@@ -121,3 +119,4 @@ Accordion.Body = ({ children, className = "" }) => {
     )
   );
 };
+export default Accordion;
