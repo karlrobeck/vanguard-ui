@@ -17,7 +17,7 @@ const Modal = ({ children }) => {
   );
 };
 
-Modal.Toggle = ({ children, className = "" }) => {
+const Toggle = ({ children, className = "" }) => {
   const { setToggle } = useModal();
 
   return (
@@ -29,7 +29,7 @@ Modal.Toggle = ({ children, className = "" }) => {
     </div>
   );
 };
-Modal.Body = ({ children, className = "" }) => {
+const Body = ({ children, className = "" }) => {
   const { toggle } = useModal();
 
   return (
@@ -47,5 +47,6 @@ Modal.Body = ({ children, className = "" }) => {
     </Transition>
   );
 };
-
+Modal.Toggle = Toggle;
+Modal.Body = Body;
 export default Modal;

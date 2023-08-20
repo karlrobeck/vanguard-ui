@@ -10,7 +10,7 @@ const Navbar = ({ children, className }) => {
   );
 };
 
-Navbar.Content = ({ children, className }) => {
+const Content = ({ children, className }) => {
   return (
     <nav
       className={`max-w-[85rem] w-full px-4 ${className}`}
@@ -21,12 +21,13 @@ Navbar.Content = ({ children, className }) => {
   );
 };
 
-Navbar.Brand = ({ children, href }) => {
+const Brand = ({ children, href }) => {
   return (
     <a href={href} className="flex-none text-xl font-semibold dark:text-white">
       {children}
     </a>
   );
 };
-
+Navbar.Content = Content;
+Navbar.Brand = Brand;
 export default Navbar;

@@ -11,12 +11,10 @@ export const Breadcrumbs = ({ children }) => {
   );
 };
 
-export default Breadcrumbs;
-
-Breadcrumbs.Item = ({ children }) => {
+const Item = ({ children }) => {
   return <li className="text-sm">{children}</li>;
 };
-Breadcrumbs.Link = ({ children, href }) => {
+const Link = ({ children, href }) => {
   return (
     <a class="flex items-center text-gray-500 hover:text-blue-600" href={href}>
       {children}
@@ -38,3 +36,6 @@ Breadcrumbs.Link = ({ children, href }) => {
     </a>
   );
 };
+Breadcrumbs.Item = Item;
+Breadcrumbs.Link = Link;
+export default Breadcrumbs;

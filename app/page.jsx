@@ -184,11 +184,11 @@ export default function Home() {
           <div className="space-y-3">
             <h2 className="font-semibold text-xl">Bunch of Components</h2>
             <p>
-              Discover Vanguard UI's diverse components for crafting captivating
-              interfaces. From buttons to cards, unleash your creativity whether
-              you're a seasoned designer or a newcomer. Elevate your projects
-              and create exceptional user experiences with Vanguard UI's
-              versatile design elements.
+              Discover Vanguard UI&apos;s diverse components for crafting
+              captivating interfaces. From buttons to cards, unleash your
+              creativity whether you&apos;re a seasoned designer or a newcomer.
+              Elevate your projects and create exceptional user experiences with
+              Vanguard UI&apos;s versatile design elements.
             </p>
           </div>
         </div>

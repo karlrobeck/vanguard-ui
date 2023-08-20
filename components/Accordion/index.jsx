@@ -11,7 +11,7 @@ const Accordion = ({ children, className = "" }) => {
   return <div className={`${Type.base} ${className}`}>{children}</div>;
 };
 
-Accordion.Item = ({ children, className = "", type = "default" }) => {
+const Item = ({ children, className = "", type = "default" }) => {
   const [toggle, setToggle] = useState();
 
   return (
@@ -21,7 +21,7 @@ Accordion.Item = ({ children, className = "", type = "default" }) => {
   );
 };
 
-Accordion.Header = ({
+const Header = ({
   children,
   className = "",
   stretch = false,
@@ -111,7 +111,7 @@ Accordion.Header = ({
   );
 };
 
-Accordion.Body = ({ children, className = "" }) => {
+const Body = ({ children, className = "" }) => {
   const { toggle, type } = useAccordion();
   return (
     toggle && (
@@ -119,4 +119,7 @@ Accordion.Body = ({ children, className = "" }) => {
     )
   );
 };
+Accordion.Item = Item;
+Accordion.Header = Header;
+Accordion.Body = Body;
 export default Accordion;

@@ -21,7 +21,7 @@ const Alert = ({ children, className = "", type = "default" }) => {
   );
 };
 
-Alert.Toggle = ({ children, className = "" }) => {
+const Toggle = ({ children, className = "" }) => {
   const { setToggle } = useAlert();
 
   return (
@@ -33,4 +33,5 @@ Alert.Toggle = ({ children, className = "" }) => {
     </div>
   );
 };
+Alert.Toggle = Toggle;
 export default Alert;

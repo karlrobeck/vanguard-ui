@@ -19,7 +19,7 @@ const Collapse = ({ children, className }) => {
   );
 };
 
-Collapse.Body = ({ children, className }) => {
+const Body = ({ children, className }) => {
   const { toggle } = useCollapse();
 
   return (
@@ -37,10 +37,11 @@ Collapse.Body = ({ children, className }) => {
     </Transition>
   );
 };
-Collapse.Toggle = ({ children, className }) => {
+const Toggle = ({ children, className }) => {
   const { setToggle } = useCollapse();
 
   return <div onClick={() => setToggle((prev) => !prev)}>{children}</div>;
 };
-
+Collapse.Body = Body;
+Collapse.Toggle = Toggle;
 export default Collapse;

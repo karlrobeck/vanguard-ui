@@ -13,7 +13,7 @@ const Input = ({ type = "text", placeholder = "", className = "" }) => {
   );
 };
 
-Input.Label = ({ children, className = "" }) => {
+const Label = ({ children, className = "" }) => {
   return (
     <label
       className={
@@ -24,7 +24,7 @@ Input.Label = ({ children, className = "" }) => {
     </label>
   );
 };
-Input.TextArea = ({ children, className = "", rows = "3" }) => {
+const TextArea = ({ children, className = "", rows = "3" }) => {
   return (
     <textarea
       class={
@@ -35,5 +35,6 @@ Input.TextArea = ({ children, className = "", rows = "3" }) => {
     />
   );
 };
-
+Input.Label = Label;
+Input.TextArea = TextArea;
 export default Input;

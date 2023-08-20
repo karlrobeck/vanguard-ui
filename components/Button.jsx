@@ -10,7 +10,7 @@ const Button = ({ children, type = "button", className = "" }) => {
   );
 };
 
-Button.Outline = ({
+const Outline = ({
   children,
   type = "button",
   className = "",
@@ -25,5 +25,5 @@ Button.Outline = ({
     </button>
   );
 };
-
+Button.Outline = Outline;
 export default Button;

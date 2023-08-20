@@ -16,15 +16,17 @@ const Dropdown = ({ children }) => {
   );
 };
 
-Dropdown.Toggle = ({ children }) => {
+const Toggle = ({ children }) => {
   const { setToggle } = useDropdown();
 
   return <div onClick={() => setToggle((prev) => !prev)}>{children}</div>;
 };
-Dropdown.Content = ({ children }) => {
+const Content = ({ children }) => {
   const { toggle } = useDropdown();
 
   return <>{toggle && <div className="absolute py-4">{children}</div>}</>;
 };
 
+Dropdown.Toggle = Toggle;
+Dropdown.Content = Content;
 export default Dropdown;
